@@ -23,7 +23,7 @@ class BonusServiceTest {
         BonusService service = new BonusService();
 
         long amount = 1000_000_60;
-        long expected = 30;
+        long expected = 500;
 
         long actual = service.calculate(amount, true);
 
@@ -36,7 +36,7 @@ class BonusServiceTest {
         BonusService service = new BonusService();
 
         long amount = 1000_60;
-        long expected = 8;
+        long expected = 10;
 
         long actual = service.calculate(amount, false);
 
@@ -51,7 +51,7 @@ class BonusServiceTest {
         BonusService service = new BonusService();
 
         long amount = 1000_000_60;
-        long expected = 8000;
+        long expected = 500;
 
         long actual = service.calculate(amount, false);
 
